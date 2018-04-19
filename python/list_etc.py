@@ -1,7 +1,7 @@
 """
 Author: Jenny
-Data: 2018-04-18
-2. list, tuple, dictionary
+Data: 2018-04-18~19
+2. list, tuple, dictionary, set
 """
 a = [1, 3, 5, 7, 9, 'List', ['apple', 'banana']]
 print(a * 2)
@@ -61,3 +61,19 @@ print('name' in dic1)
 dic2 = {1:1, 2:2, 3:3}
 print(min(dic2.values()))
 print(max(dic2.values()))
+
+print('*'*50)
+s1 = set([1, 2, 3, 4, 5, 6])
+print(s1)
+s2 = set("Hello")
+print(s2)
+s3 = set([4, 5, 6, 7, 8, 9])
+print(s1 & s3)
+print(s1 | s3)
+print(s1 - s3)
+s2.add(4)
+print(s2)
+s2.update(["h", 1, 2])
+print(s2)
+s2.remove("h")
+print(s2)
