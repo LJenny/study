@@ -16,5 +16,5 @@ def sum_many(*args):
 	for i in args:
 		sum = sum + i
 	return sum
-result = sum_many(1, 2, 3)
+result = sum_many(4, 5, 6)
 print(result)
