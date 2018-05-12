@@ -25,3 +25,23 @@ class Eagle(Bird):
 
 eagle = Eagle()
 eagle.fly()
+
+class MyError(Exception):
+	def __init__(self, msg):
+		self.msg = msg
+	def __str__(self):
+		#return "It can't accept the nick!!"
+		return self.msg
+
+def say_nick(nick):
+	if nick == 'pull':
+		raise MyError("It can't accept the nick~")
+	print(nick)
+
+try:
+	say_nick("push")
+	say_nick("pull")
+#except MyError:
+#	print("Don't ust pull")
+except MyError as e:
+	print(e)  # use error message
